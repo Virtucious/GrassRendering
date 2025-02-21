@@ -27,7 +27,10 @@ bool firstMouse = true;
 //timing
 float deltaTime = 0.0f;	
 float lastFrame = 0.0f;
-float fps = 0.0f;		
+float fpsTotal = 0.0f;
+int frameCount = 0;
+float interval = 1.0f;
+float lastInterval = 0.0f;
 
 //plane
 int planeWidth = 20;			//size along x-axis
@@ -300,7 +303,20 @@ int main()
 		float currentFrame = static_cast<float>(glfwGetTime());
 		deltaTime = currentFrame - lastFrame;
 		lastFrame = currentFrame;
-		fps = 1.0 / deltaTime;
+		
+		float fps = 1.0 / deltaTime;
+		fpsTotal += fps;
+		frameCount++;
+
+		if (currentFrame - lastInterval > interval)
+		{
+			float averageFps = fpsTotal / frameCount;
+			std::cout << "Average FPS: " << averageFps << std::endl;
+
+			fpsTotal = 0.0f;
+			frameCount = 0;
+			lastInterval = currentFrame;
+		}
 		
 		//input
 		processInput(window);
@@ -345,9 +361,6 @@ int main()
 		glBindVertexArray(grassVAO);
 		glDrawArraysInstanced(GL_TRIANGLES, 0, 6, grassPositions.size());
 		glBindVertexArray(0);
-
-		//Render fps text
-		std::cout << "FPS: " << fps << std::endl;
 
 		//glfw swap buffers and poll IO events
 		//------------------------------------
