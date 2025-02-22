@@ -146,9 +146,17 @@
     <None Include="grassShader.vert" />
     <None Include="planeShader.frag" />
     <None Include="planeShader.vert" />
+    <None Include="skybox.frag" />
+    <None Include="skybox.vert" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\grass.jpg" />
+    <Image Include="skyboxImages\Back.jpg" />
+    <Image Include="skyboxImages\Bottom.jpg" />
+    <Image Include="skyboxImages\Front.jpg" />
+    <Image Include="skyboxImages\Left.jpg" />
+    <Image Include="skyboxImages\Right.jpg" />
+    <Image Include="skyboxImages\Top.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -41,9 +41,29 @@
     <None Include="planeShader.frag" />
     <None Include="grassShader.vert" />
     <None Include="grassShader.frag" />
+    <None Include="skybox.vert" />
+    <None Include="skybox.frag" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="resources\grass.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="skyboxImages\Back.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="skyboxImages\Bottom.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="skyboxImages\Front.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="skyboxImages\Left.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="skyboxImages\Right.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="skyboxImages\Top.jpg">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
