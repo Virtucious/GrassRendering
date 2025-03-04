@@ -31,3 +31,7 @@ This is a project that I created to render multiple grass textures(billboards) w
   - A: Move Left
   - D: Move Right
 - Mouse movement to look around
+
+## Preview
+![Grass render](images/grass.png)
+![FPS](images/fps.png)
