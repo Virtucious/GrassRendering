@@ -13,7 +13,7 @@ This is a project that I created to render multiple grass textures(billboards) w
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Virtucious/GrassRendering.git
-   cd GrassRendering```
+   cd GrassRendering
 
 2. **Set Up Dependencies**
    - GLFW: Download and install GLFW. Ensure that the library files are linked appropriately in your development environment.
