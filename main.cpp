@@ -239,7 +239,7 @@ int main()
 
 	//Generating grass positions
 	std::vector<glm::vec3> grassPositions;
-	int grassCount = 50000;
+	int grassCount = 30000;
 
 	std::random_device rd;
 	std::mt19937 gen(rd());
